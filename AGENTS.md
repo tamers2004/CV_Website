@@ -28,7 +28,7 @@
 
 ## GitHub Pages deployment
 
-- **`vite.config.js`** `base` must match repo name (currently `/test_2026/`)
-- **GitHub Actions** workflow at `.github/workflows/deploy.yml` auto-deploys on push to `main`
-- To deploy: push to `main` → workflow builds & publishes to GitHub Pages
+- **`vite.config.js`** `base` must match repo name (currently `/CV_Website/`)
+- **GitHub Pages** is built-in — no custom workflow needed
+- To deploy: push to `main` → GitHub auto-builds & publishes
 - GitHub repo Settings → Pages → Source must be set to "GitHub Actions"
