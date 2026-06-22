@@ -5,7 +5,7 @@ const navItems = [
   { label: 'Skills', id: 'skills' },
   { label: 'Projects', id: 'projects' },
   { label: 'Education', id: 'education' },
-  { label: 'Volunteer', id: 'volunteer' },
+  { label: 'Experience', id: 'experience' },
   { label: 'Contact', id: 'contact' },
 ]
 
@@ -134,7 +134,7 @@ export default function App() {
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </a>
             <a
-              href={`${import.meta.env.BASE_URL}Tamer_Satel_CV.pdf`}
+              href={`${import.meta.env.BASE_URL}Tamer_Satel_FullStack.pdf`}
               download
               className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 transition-colors font-medium text-sm tracking-wide"
             >
@@ -177,6 +177,34 @@ export default function App() {
                 {skill}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WORK EXPERIENCE ─── */}
+      <section id="experience" className="px-4 py-24 max-w-4xl mx-auto border-t border-gray-800/60 scroll-mt-14">
+        <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">Work Experience</h2>
+          <div className="w-16 h-1 bg-purple-500 rounded-full mb-8" />
+          <div className="relative pl-8 border-l-2 border-gray-800">
+            <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-purple-500 border-2 border-gray-950" />
+            <div className="mb-2">
+              <span className="text-sm text-gray-500 font-mono">2026</span>
+            </div>
+            <h3 className="text-xl font-semibold">Full Stack Developer | Volunteen</h3>
+            <p className="text-gray-400 text-sm leading-relaxed mt-2">
+              Developed and maintained a cross-platform mobile application using React Native for iOS and Android.
+            </p>
+            <ul className="mt-3 space-y-1.5 text-gray-400 text-sm list-disc list-inside marker:text-purple-400">
+              <li>Implemented new features, optimized performance, and improved the overall user experience.</li>
+              <li>Collaborated with developers and stakeholders to deliver scalable application functionality.</li>
+              <li>Participated in debugging, testing, code reviews, and Agile development processes.</li>
+            </ul>
+            <div className="flex flex-wrap gap-2 mt-4">
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">React Native</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">JavaScript</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Git</span>
+            </div>
           </div>
         </div>
       </section>
@@ -239,32 +267,6 @@ export default function App() {
                 Completed three years of high school computer science (Grades 10-12),
                 building foundational knowledge.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── VOLUNTEER ─── */}
-      <section id="volunteer" className="px-4 py-24 max-w-4xl mx-auto border-t border-gray-800/60 scroll-mt-14">
-        <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">Volunteer</h2>
-          <div className="w-16 h-1 bg-purple-500 rounded-full mb-8" />
-          <div className="p-6 rounded-xl bg-gray-900/50 border border-gray-800">
-            <div className="mb-2">
-              <span className="text-sm text-gray-500 font-mono">2026</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">&ldquo;Volunteen&rdquo; Program</h3>
-            <p className="text-gray-400 text-sm mb-1">Tel Aviv-Yafo</p>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Led the technological transformation of a community platform built with React Native
-              that empowers youth to earn TeenCoins through community service and redeem rewards at
-              local businesses. Focused on making the system accessible and engaging for a mobile-first
-              audience.
-            </p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">
-                React Native
-              </span>
             </div>
           </div>
         </div>
