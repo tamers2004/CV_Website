@@ -12,7 +12,7 @@ export const socials = {
   linkedin: 'https://www.linkedin.com/in/tamer-satel-4b112a2b6/',
   email: 'tamers2004@gmail.com',
   phone: '+972 54-6833507',
-  cv: `${import.meta.env.BASE_URL}Tamer_Satel_FullStack.pdf`,
+  cv: `${import.meta.env.BASE_URL}Tamer_Satel_CV.pdf`,
 }
 
 export const projects = [
