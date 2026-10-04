@@ -49,15 +49,32 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  {project.link && (
-                    <a
-                      href={project.link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-muted underline decoration-accent/50 underline-offset-4 transition-colors hover:text-fog"
-                    >
-                      {project.link.label} <span aria-hidden>↗</span>
-                    </a>
+                  {project.links && (
+                    <div className="mt-6 flex flex-wrap items-center gap-3">
+                      {project.links.map((l) =>
+                        l.primary ? (
+                          <a
+                            key={l.label}
+                            href={l.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition-all hover:brightness-110 hover:shadow-[0_8px_28px_-8px_rgba(79,124,255,0.8)]"
+                          >
+                            {l.label} <span aria-hidden>↗</span>
+                          </a>
+                        ) : (
+                          <a
+                            key={l.label}
+                            href={l.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-sm font-medium text-muted underline decoration-accent/50 underline-offset-4 transition-colors hover:text-fog"
+                          >
+                            {l.label} <span aria-hidden>↗</span>
+                          </a>
+                        ),
+                      )}
+                    </div>
                   )}
                 </div>
               </article>

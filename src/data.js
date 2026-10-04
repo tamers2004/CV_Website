@@ -50,7 +50,7 @@ export const projects = [
     description:
       'Browser-based 3D racing game set in a neon cyberpunk city. Drifting, nitro boosts, dynamic weather, day/night cycles, AI opponents, unlockable vehicles, and local high scores. Built with Three.js, Rapier physics, and Zustand.',
     tags: ['React', 'Three.js', 'React Three Fiber', 'Rapier', 'Zustand', 'Tailwind CSS'],
-    link: { label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs' },
+    links: [{ label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs' }],
   },
   {
     title: 'Sineen Web',
@@ -58,7 +58,10 @@ export const projects = [
     description:
       'Responsive website for a professional piercing studio. Service and pricing sections, clean visual design, and smooth interactions. Built as a polished frontend experience with React, TypeScript, and Tailwind CSS.',
     tags: ['React', 'Vite', 'TypeScript', 'Tailwind CSS'],
-    link: { label: 'GitHub', href: 'https://github.com/tamers2004/Sineen_Web_2026' },
+    links: [
+      { label: 'Live Demo', href: 'https://tamers2004.github.io/Sineen_Web_2026/', primary: true },
+      { label: 'GitHub', href: 'https://github.com/tamers2004/Sineen_Web_2026' },
+    ],
   },
 ]
 
