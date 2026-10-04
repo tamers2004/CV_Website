@@ -57,8 +57,8 @@ const projects = [
 
 const skills = [
   'React', 'React Native', 'JavaScript', 'HTML', 'CSS',
-  'Node.js', 'Express.js', 'Firebase', 'MySQL', 'Docker',
-  'Tailwind CSS', 'REST APIs', 'Git',
+  'Node.js', 'Express.js', 'Firebase', 'MySQL', 'SQL', 'Docker',
+  'Tailwind CSS', 'REST APIs', 'Linux', 'Debugging', 'Git',
 ]
 
 export default function App() {
@@ -189,20 +189,24 @@ export default function App() {
           <div className="relative pl-8 border-l-2 border-gray-800">
             <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-purple-500 border-2 border-gray-950" />
             <div className="mb-2">
-              <span className="text-sm text-gray-500 font-mono">2026</span>
+              <span className="text-sm text-gray-500 font-mono">2025 – Present</span>
             </div>
-            <h3 className="text-xl font-semibold">Full Stack Developer | Volunteen</h3>
+            <h3 className="text-xl font-semibold">Technical Support Specialist | Cardcom</h3>
             <p className="text-gray-400 text-sm leading-relaxed mt-2">
-              Developed and maintained a cross-platform mobile application using React Native for iOS and Android.
+              Provide technical support and troubleshoot issues across web-based applications, APIs, databases, and system integrations.
             </p>
             <ul className="mt-3 space-y-1.5 text-gray-400 text-sm list-disc list-inside marker:text-purple-400">
-              <li>Implemented new features, optimized performance, and improved the overall user experience.</li>
-              <li>Collaborated with developers and stakeholders to deliver scalable application functionality.</li>
-              <li>Participated in debugging, testing, code reviews, and Agile development processes.</li>
+              <li>Investigate system errors, analyze logs, and reproduce technical issues to identify root causes.</li>
+              <li>Work with development and technical teams to resolve application bugs and improve system reliability.</li>
+              <li>Use SQL, REST APIs, and debugging techniques to investigate data and application-related issues.</li>
             </ul>
             <div className="flex flex-wrap gap-2 mt-4">
-              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">React Native</span>
-              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">JavaScript</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">SQL</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">REST APIs</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Web Applications</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Databases</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Debugging</span>
+              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Linux</span>
               <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 text-xs font-medium">Git</span>
             </div>
           </div>
