@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const navItems = [
   { label: 'About', id: 'about' },
@@ -60,6 +60,105 @@ const skills = [
   'Node.js', 'Express.js', 'Firebase', 'MySQL', 'SQL', 'Docker',
   'Tailwind CSS', 'REST APIs', 'Linux', 'Debugging', 'Git',
 ]
+
+function ContactForm() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [status, setStatus] = useState({ state: 'idle', msg: '' })
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    if (status.state === 'sending') return
+    setStatus({ state: 'sending', msg: '' })
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/tamers2004@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _honey: '',
+          _captcha: 'false',
+          _template: 'table',
+        }),
+      })
+      if (!res.ok) throw new Error('Request failed')
+      setName('')
+      setEmail('')
+      setMessage('')
+      setStatus({ state: 'success', msg: "Message sent! I'll get back to you soon." })
+    } catch {
+      setStatus({ state: 'error', msg: 'Something went wrong. Please try again or email me directly.' })
+    }
+  }
+
+  const inputClass =
+    'w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-800 text-gray-100 text-sm placeholder:text-gray-600 outline-none focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20 transition'
+
+  return (
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-10 text-left space-y-4">
+      <div>
+        <label htmlFor="contact-name" className="block text-sm text-gray-400 mb-1.5">
+          Name
+        </label>
+        <input
+          id="contact-name"
+          type="text"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your name"
+          className={inputClass}
+        />
+      </div>
+      <div>
+        <label htmlFor="contact-email" className="block text-sm text-gray-400 mb-1.5">
+          Email
+        </label>
+        <input
+          id="contact-email"
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@example.com"
+          className={inputClass}
+        />
+      </div>
+      <div>
+        <label htmlFor="contact-message" className="block text-sm text-gray-400 mb-1.5">
+          Message
+        </label>
+        <textarea
+          id="contact-message"
+          required
+          rows={5}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="How can I help?"
+          className={`${inputClass} resize-y min-h-28`}
+        />
+      </div>
+      <button
+        type="submit"
+        disabled={status.state === 'sending'}
+        className="w-full px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 disabled:opacity-60 disabled:cursor-not-allowed transition-colors font-medium text-sm tracking-wide"
+      >
+        {status.state === 'sending' ? 'Sending…' : 'Send Message'}
+      </button>
+      {status.msg && (
+        <p
+          role="status"
+          className={`text-sm text-center ${status.state === 'success' ? 'text-emerald-400' : 'text-red-400'}`}
+        >
+          {status.msg}
+        </p>
+      )}
+    </form>
+  )
+}
 
 export default function App() {
   useReveal()
@@ -298,6 +397,7 @@ export default function App() {
               <a href="https://www.linkedin.com/in/tamer-satel-4b112a2b6/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-gray-800 hover:bg-purple-600 transition-colors text-sm">LinkedIn</a>
             </div>
           </div>
+          <ContactForm />
         </div>
       </section>
 
