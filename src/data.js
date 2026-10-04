@@ -21,35 +21,35 @@ export const projects = [
     field: 'Emergency Response Platform',
     description:
       'Full-stack platform for armed civilians and security forces. Real-time event tracking, emergency response, weapon theft prevention. Built with React Native, React.js, and Firebase.',
-    tags: ['React', 'React Native', 'Firebase', 'Real-time'],
+    tags: ['React Native', 'React', 'Firebase', 'Real-time', 'Cloud Firestore', 'Authentication', 'Geolocation'],
   },
   {
     title: 'Paper Trader Pro',
     field: 'Stock Trading Simulation',
     description:
       'Virtual cryptocurrency trading platform with buy/sell, portfolio management, real-time balance tracking, and market-style UI. Built with React, Express.js, Node.js, and MySQL.',
-    tags: ['React', 'Express.js', 'Node.js', 'MySQL'],
+    tags: ['React', 'Express.js', 'Node.js', 'MySQL', 'REST APIs', 'Authentication', 'API Integration'],
   },
   {
     title: 'SmartBasket',
     field: 'Price Comparison Platform',
     description:
       'Full-stack grocery price comparison platform with shopping lists and basket comparisons across supermarket chains. Built REST APIs and managed product and pricing data using MySQL.',
-    tags: ['React', 'Vite', 'Express.js', 'Node.js', 'MySQL', 'Prisma', 'Tailwind CSS', 'Docker', 'JWT', 'REST APIs'],
+    tags: ['React', 'Vite', 'Express.js', 'Node.js', 'MySQL', 'Prisma', 'REST APIs', 'JWT', 'Tailwind CSS', 'Docker'],
   },
   {
     title: 'Mobile Sudoku Game',
     field: 'Published Mobile Game',
     description:
       'Cross-platform Sudoku app published on Google Play. Board generation, difficulty levels (Easy/Medium/Hard), persistent game state via AsyncStorage.',
-    tags: ['React Native', 'Expo', 'Tailwind CSS', 'Google Play'],
+    tags: ['React Native', 'Expo', 'JavaScript', 'AsyncStorage', 'Tailwind CSS', 'State Management', 'Google Play'],
   },
   {
     title: 'Cyber Drift',
     field: '3D Browser Racing Game',
     description:
       'Browser-based 3D racing game set in a neon cyberpunk city. Drifting, nitro boosts, dynamic weather, day/night cycles, AI opponents, unlockable vehicles, and local high scores. Built with Three.js, Rapier physics, and Zustand.',
-    tags: ['React', 'Three.js', 'React Three Fiber', 'Rapier', 'Zustand', 'Tailwind CSS'],
+    tags: ['React', 'Vite', 'TypeScript', 'Three.js', 'React Three Fiber', 'Rapier', 'Zustand', 'GSAP', 'Tailwind CSS'],
     links: [{ label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs', primary: true }],
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
     field: 'Interactive Business Website',
     description:
       'Responsive website for a professional piercing studio. Service and pricing sections, clean visual design, and smooth interactions. Built as a polished frontend experience with React, TypeScript, and Tailwind CSS.',
-    tags: ['React', 'Vite', 'TypeScript', 'Tailwind CSS'],
+    tags: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Responsive Design', 'UI/UX'],
     links: [{ label: 'Live Demo', href: 'https://tamers2004.github.io/Sineen_Web_2026/', primary: true }],
   },
 ]
