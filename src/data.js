@@ -35,7 +35,7 @@ export const projects = [
     field: 'Price Comparison Platform',
     description:
       'Full-stack grocery price comparison platform with shopping lists and basket comparisons across supermarket chains. Built REST APIs and managed product and pricing data using MySQL.',
-    tags: ['React', 'Express.js', 'MySQL', 'Tailwind CSS'],
+    tags: ['React', 'Vite', 'Express.js', 'Node.js', 'MySQL', 'Prisma', 'Tailwind CSS', 'Docker', 'JWT', 'REST APIs'],
   },
   {
     title: 'Mobile Sudoku Game',
