@@ -42,10 +42,10 @@ const projects = [
     tags: ['React', 'Express.js', 'Node.js', 'MySQL'],
   },
   {
-    title: 'Twitter Clone',
+    title: 'SmartBasket',
     description:
-      'Full-stack social media application replicating core Twitter functionality — authentication, profile management, posting, and a RESTful API.',
-    tags: ['React', 'Express.js', 'MySQL', 'REST API'],
+      'Full-stack grocery price comparison platform with shopping lists and basket comparisons across supermarket chains. Built REST APIs and managed product and pricing data using MySQL.',
+    tags: ['React', 'Express.js', 'MySQL', 'Tailwind CSS'],
   },
   {
     title: 'Mobile Sudoku Game',
