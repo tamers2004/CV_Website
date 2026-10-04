@@ -49,6 +49,16 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
+                  {project.link && (
+                    <a
+                      href={project.link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-muted underline decoration-accent/50 underline-offset-4 transition-colors hover:text-fog"
+                    >
+                      {project.link.label} <span aria-hidden>↗</span>
+                    </a>
+                  )}
                 </div>
               </article>
             </Reveal>

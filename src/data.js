@@ -1,8 +1,8 @@
 export const navItems = [
   { label: 'About', id: 'about' },
-  { label: 'Skills', id: 'skills' },
-  { label: 'Projects', id: 'projects' },
   { label: 'Experience', id: 'experience' },
+  { label: 'Projects', id: 'projects' },
+  { label: 'Skills', id: 'skills' },
   { label: 'Education', id: 'education' },
   { label: 'Contact', id: 'contact' },
 ]
@@ -43,6 +43,22 @@ export const projects = [
     description:
       'Cross-platform Sudoku app published on Google Play. Board generation, difficulty levels (Easy/Medium/Hard), persistent game state via AsyncStorage.',
     tags: ['React Native', 'Expo', 'Tailwind CSS', 'Google Play'],
+  },
+  {
+    title: 'Cyber Drift',
+    field: '3D Browser Racing Game',
+    description:
+      'Browser-based 3D racing game set in a neon cyberpunk city. Drifting, nitro boosts, dynamic weather, day/night cycles, AI opponents, unlockable vehicles, and local high scores. Built with Three.js, Rapier physics, and Zustand.',
+    tags: ['React', 'Three.js', 'React Three Fiber', 'Rapier', 'Zustand', 'Tailwind CSS'],
+    link: { label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs' },
+  },
+  {
+    title: 'Sineen Web',
+    field: 'Interactive Business Website',
+    description:
+      'Responsive website for a professional piercing studio. Service and pricing sections, clean visual design, and smooth interactions. Built as a polished frontend experience with React, TypeScript, and Tailwind CSS.',
+    tags: ['React', 'Vite', 'TypeScript', 'Tailwind CSS'],
+    link: { label: 'GitHub', href: 'https://github.com/tamers2004/Sineen_Web_2026' },
   },
 ]
 
