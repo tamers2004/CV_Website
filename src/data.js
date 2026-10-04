@@ -50,7 +50,7 @@ export const projects = [
     description:
       'Browser-based 3D racing game set in a neon cyberpunk city. Drifting, nitro boosts, dynamic weather, day/night cycles, AI opponents, unlockable vehicles, and local high scores. Built with Three.js, Rapier physics, and Zustand.',
     tags: ['React', 'Three.js', 'React Three Fiber', 'Rapier', 'Zustand', 'Tailwind CSS'],
-    links: [{ label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs' }],
+    links: [{ label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs', primary: true }],
   },
   {
     title: 'Sineen Web',
