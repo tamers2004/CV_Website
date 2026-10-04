@@ -53,7 +53,7 @@ export const projects = [
     links: [{ label: 'Live Demo', href: 'https://lnkd.in/dMdSSqjs', primary: true }],
   },
   {
-    title: 'Sineen Web',
+    title: 'Sineen Piercing Studio',
     field: 'Interactive Business Website',
     description:
       'Responsive website for a professional piercing studio. Service and pricing sections, clean visual design, and smooth interactions. Built as a polished frontend experience with React, TypeScript, and Tailwind CSS.',
