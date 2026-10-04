@@ -58,10 +58,7 @@ export const projects = [
     description:
       'Responsive website for a professional piercing studio. Service and pricing sections, clean visual design, and smooth interactions. Built as a polished frontend experience with React, TypeScript, and Tailwind CSS.',
     tags: ['React', 'Vite', 'TypeScript', 'Tailwind CSS'],
-    links: [
-      { label: 'Live Demo', href: 'https://tamers2004.github.io/Sineen_Web_2026/', primary: true },
-      { label: 'GitHub', href: 'https://github.com/tamers2004/Sineen_Web_2026' },
-    ],
+    links: [{ label: 'Live Demo', href: 'https://tamers2004.github.io/Sineen_Web_2026/', primary: true }],
   },
 ]
 
