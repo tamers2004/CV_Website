@@ -82,11 +82,11 @@ export const experience = {
   role: 'Full-Stack Developer',
   company: 'Cardcom',
   summary:
-    'Develop and maintain modern web applications using React on the frontend and C# / .NET on the backend, focusing on responsive user interfaces, REST APIs, and database integration.',
+    'Develop full-stack web applications using React and TypeScript on the frontend and C# / .NET on the backend, with a focus on maintainable code, RESTful APIs, and efficient database integration.',
   bullets: [
-    'Build dynamic, responsive, and user-friendly interfaces using React, JavaScript, TypeScript, HTML, and CSS.',
-    'Develop backend services and RESTful APIs using C#, ASP.NET Core, and .NET to support application functionality and business logic.',
-    'Integrate frontend components with backend services and SQL databases to ensure efficient data processing and reliable application performance.',
+    'Build responsive, reusable UI components using React, JavaScript, TypeScript, HTML, and CSS to deliver maintainable frontend interfaces.',
+    'Design and develop RESTful APIs and backend services using C#, ASP.NET Core, and .NET, implementing business logic, input validation, error handling, and SQL Server integration.',
+    'Integrate frontend components, backend services, and databases to ensure consistent data flow, troubleshoot application issues, and improve performance and reliability.',
   ],
   tech: ['React', 'JavaScript', 'TypeScript', 'C#', '.NET', 'ASP.NET Core', 'REST APIs', 'SQL Server', 'Git'],
 }
