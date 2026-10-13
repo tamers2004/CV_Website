@@ -80,7 +80,7 @@ export const skillGroups = [
 export const experience = {
   period: '2025 – Present',
   role: 'Full-Stack Developer',
-  company: 'Cardcom',
+  company: 'Cardcom LTD',
   summary:
     'Develop full-stack web applications using React and TypeScript on the frontend and C# / .NET on the backend, with a focus on maintainable code, RESTful APIs, and efficient database integration.',
   bullets: [
