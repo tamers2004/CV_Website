@@ -79,16 +79,16 @@ export const skillGroups = [
 
 export const experience = {
   period: '2025 – Present',
-  role: 'Technical Support Specialist',
+  role: 'Full-Stack Developer',
   company: 'Cardcom',
   summary:
-    'Provide technical support and troubleshoot issues across web-based applications, APIs, databases, and system integrations.',
+    'Develop and maintain modern web applications using React on the frontend and C# / .NET on the backend, focusing on responsive user interfaces, REST APIs, and database integration.',
   bullets: [
-    'Investigate system errors, analyze logs, and reproduce technical issues to identify root causes.',
-    'Work with development and technical teams to resolve application bugs and improve system reliability.',
-    'Use SQL, REST APIs, and debugging techniques to investigate data and application-related issues.',
+    'Build dynamic, responsive, and user-friendly interfaces using React, JavaScript, TypeScript, HTML, and CSS.',
+    'Develop backend services and RESTful APIs using C#, ASP.NET Core, and .NET to support application functionality and business logic.',
+    'Integrate frontend components with backend services and SQL databases to ensure efficient data processing and reliable application performance.',
   ],
-  tech: ['SQL', 'REST APIs', 'Web Applications', 'Databases', 'Debugging', 'Linux', 'Git'],
+  tech: ['React', 'JavaScript', 'TypeScript', 'C#', '.NET', 'ASP.NET Core', 'REST APIs', 'SQL Server', 'Git'],
 }
 
 export const education = [
